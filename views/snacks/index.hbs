@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Snacks Index Page</h1>
+  <a href="/">Go Back Home</a><br>
+  <a href="/snacks/new">Add New Snack</a>
+  {{#each snacks}}
+  <div class="row spacer">
+    <div class="col-md-2">
+      <img src="{{ this.poster_url }}"
+        alt="{{ this.title }}"
+        class="poster" height="180">
+    </div>
+    <div class="col-md-6">
+      <h2>
+        <a href="/movies/{{ this.id }}">{{ this.title }}</a>
+      </h2>
+      <p>Director: {{ this.director }}</p>
+      <p>Year: {{ this.year }}</p>
+      <p>My Rating: {{ this.my_rating }}</p>
+    </div>
+  </div>
+  {{/each}}
+</div>

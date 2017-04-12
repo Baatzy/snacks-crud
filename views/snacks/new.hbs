@@ -1,0 +1,24 @@
+  <a href="/movies">Go Back to Snack Reviews</a>
+<h1>Add a Snack Review!</h1>
+
+<form method="POST" action="/snacks">
+  <div class="form-group">
+    <label for="title">Name</label>
+    <input name="title" type="text" class="form-control" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <label for="director">Image URL</label>
+    <input name="director" type="text" class="form-control" placeholder="Director">
+  </div>
+  <div class="form-group">
+    <label for="year">Review</label>
+    <input name="year" type="number" class="form-control" placeholder="Year" min="1900" max="2099" step="1">
+  </div>
+  <div class="form-group">
+    <label for="my-rating">Rating</label>
+    <input name="my-rating" type="number" class="form-control" placeholder="3" default="3" min="1" max="5">
+  </div>
+  <div class="form-group">
+    <input id="submit" type="submit">
+  </div>
+</form>
