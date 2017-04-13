@@ -1,0 +1,19 @@
+<div class="container">
+  <a href="/snacks">Go Back to Snacks Reviews</a>
+  <h1>Here's that Snack Dude (SHOW)</h1>
+  <div class="row spacer">
+    <div class="col-md-2">
+      <img src="{{ snack.image_url }}"
+        alt="{{ snack.name }}"
+        class="poster" height="180">
+    </div>
+    <div class="col-md-6">
+      <h2>
+        <h1>{{ snack.name }}</h1>
+      </h2>
+      <p>Name: {{ snack.name }}</p>
+      <p>{{ snack.review_description }}</p>
+      <p>Rating: {{ snack.rating }}</p>
+    </div>
+  </div>
+</div>
