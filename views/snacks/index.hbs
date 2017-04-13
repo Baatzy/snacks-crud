@@ -15,10 +15,10 @@
       <p>{{ this.review_description }}</p>
       <p>Rating: {{ this.rating }}</p>
     </div>
-    <form action="/movies/{{ this.id }}/edit" method="POST">
+    <form action="/snacks/{{ this.id }}/edit">
       <input type="submit" name="delete" value="Fucking Edit This Snack">
     </form>
-    <form action="/movies/{{ this.id }}?_method=DELETE" method="POST">
+    <form action="/snacks/{{ this.id }}?_method=DELETE" method="POST">
       <input type="submit" name="delete" value="Destroy this Snack">
     </form>
   </div>
