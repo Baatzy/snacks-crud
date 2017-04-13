@@ -7,6 +7,9 @@ router.get('/', (req, res, next) => {
   db('snacks').then(snacks => {
     res.render('snacks/index', { snacks })
   })
+  .catch((err) => {
+    console.log(err);
+  })
 })
 
 //GET create snack form
